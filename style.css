@@ -44,7 +44,7 @@ h1{
     width: 400px;
     height: auto;
     border-radius: 30px;
-    background-color: var(--Grey-900);
+    background: linear-gradient(to bottom left, var(--Grey-900), var(--Grey-950));
     padding: 30px;
     display: block;
 }
@@ -89,6 +89,7 @@ h1{
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 3px;
+    border: none;
 }
 
 .btn:hover,.rating-numbers div:hover{
@@ -98,4 +99,29 @@ h1{
 
 .rating-numbers div:active,.btn:active{
     background-color: var(--Orange-500);
+}
+
+.thank-you-hero{
+    width: 400px;
+    height: auto;
+    border-radius: 30px;
+    background: linear-gradient(to bottom left, var(--Grey-900), var(--Grey-950));
+    padding: 30px;
+    text-align: center;
+    display: none;
+}
+
+.thank-you-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.rate{
+    display: inline-block;
+    background-color: var(--Grey-800);
+    color: var(--Orange-500);
+    border-radius: 30px;
+    padding: 5px 15px;
+    margin-bottom: 35px;
 }
