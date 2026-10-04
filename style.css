@@ -1,5 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+:root{
+    --Orange-500: hsl(25, 97%, 53%);
+
+    --White: hsl(0, 100%, 100%);
+    --Grey-500: hsl(217, 12%, 63%);
+    --Grey-800: hsl(210, 15%, 24%);
+    --Grey-900: hsl(213, 19%, 18%);
+    --Grey-950: hsl(216, 12%, 8%);
+}
+
+body{
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+}
+
+p{
+    color: var(--Grey-500);
+    line-height: 1.5rem;
+}
+
+h1{
+    font-weight: 700;
+    color: var(--White);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Grey-950);
+    width: 100vw;
+    height: 100vh;
+}
+
+.rating-hero{
+    width: 400px;
+    height: auto;
+    border-radius: 30px;
+    background-color: var(--Grey-900);
+    padding: 30px;
+    display: block;
+}
+
+.icon-star{
+    margin-bottom: 25px;
+}
+
+.icon-star img{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--Grey-800);
+}
+
+.rating-numbers{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.rating-numbers div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--Grey-800);
+}
+
+.rating-numbers p{
+    font-weight: 700;
+    
+}
+
+.btn{
+    width: 100%;
+    padding: 15px;
+    border-radius: 35px;
+    background-color: var(--Orange-500);
+    font-family: "Overpass", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.btn:hover,.rating-numbers div:hover{
+    background-color: var(--White);
+    cursor: pointer;
+}
+
+.rating-numbers div:active,.btn:active{
+    background-color: var(--Orange-500);
 }
