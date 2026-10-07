@@ -65,7 +65,7 @@ h1{
     margin-bottom: 20px;
 }
 
-.rating-numbers div{
+.rating{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,11 +73,11 @@ h1{
     height: 45px;
     border-radius: 50%;
     background-color: var(--Grey-800);
-}
-
-.rating-numbers p{
+    border: none;
+    font-family: "Overpass", sans-serif;
     font-weight: 700;
-    
+    font-size: 14px;
+    color: var(--Grey-500);
 }
 
 .btn{
@@ -92,12 +92,16 @@ h1{
     border: none;
 }
 
-.btn:hover,.rating-numbers div:hover{
+.rating-active{
+    background-color: var(--White);
+}
+
+.btn:hover,.rating:hover{
     background-color: var(--White);
     cursor: pointer;
 }
 
-.rating-numbers div:active,.btn:active{
+.rating:active,.btn:active{
     background-color: var(--Orange-500);
 }
 
